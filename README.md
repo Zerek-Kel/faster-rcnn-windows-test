@@ -116,7 +116,7 @@ Faster RCNN物体检测模型由三个模块组成：
 
 在RPN中，作者提出了anchor。Anchor是大小和尺寸固定的候选框。论文中用到的anchor有三种尺寸和三种比例，如下图所示，三种尺寸分别是小（蓝128）中（红256）大（绿512），三个比例分别是1:1，1:2，2:1。3×3的组合总共有9种anchor。
 
-![4](https://github.com/Zerek-Kel/faster-rcnn-windows-test/blob/master/md_image/4.jpg)
+![4](https://github.com/Zerek-Kel/faster-rcnn-windows-test/blob/master/md_image/4.png)
 
 然后用这9种anchor在特征图（feature）左右上下移动，每一个特征图上的点都有9个anchor，最终生成了 (H/16)× (W/16)×9个anchor. 对于一个512×62×37的feature map，有 62×37×9~ 20000个anchor。softmax分类器提取positvie anchors -> bbox reg回归positive anchors -> Proposal Layer生成proposals
 
@@ -125,12 +125,14 @@ Faster RCNN物体检测模型由三个模块组成：
 RoI Pooling层则负责收集proposal，并计算出proposal feature maps，送入后续网络。
 
 - 由于proposal是对应MxN尺度的，所以首先使用spatial_scale参数将其映射回(M/16)x(N/16)大小的feature map尺度；
-- 再将每个proposal对应的feature map区域水平分为 ![[公式]](https://www.zhihu.com/equation?tex=%5Ctext%7Bpooled_w%7D%5Ctimes+%5Ctext%7Bpooled_h%7D) 的网格；
-- 对网格的每一份都进行max pooling处理。![5](https://github.com/Zerek-Kel/faster-rcnn-windows-test/blob/master/md_image/5.jpg)
+- 再将每个proposal对应的feature map区域水平分为 ![[公式]](https://github.com/Zerek-Kel/faster-rcnn-windows-test/blob/master/md_image/7.png)的网格；
+- 对网格的每一份都进行max pooling处理。
+- ![5](https://github.com/Zerek-Kel/faster-rcnn-windows-test/blob/master/md_image/5.jpg)
 
 ### Classification
 
-Classification部分利用已经获得的proposal feature maps，通过full connect层与softmax计算每个proposal具体属于那个类别（如人，车，电视等），输出cls_prob概率向量；同时再次利用bounding box regression获得每个proposal的位置偏移量bbox_pred，用于回归更加精确的目标检测框。Classification部分网络结构如下图。![6](https://github.com/Zerek-Kel/faster-rcnn-windows-test/blob/master/md_image/6.jpg)
+Classification部分利用已经获得的proposal feature maps，通过full connect层与softmax计算每个proposal具体属于那个类别（如人，车，电视等），输出cls_prob概率向量；同时再次利用bounding box regression获得每个proposal的位置偏移量bbox_pred，用于回归更加精确的目标检测框。Classification部分网络结构如下图。
+![6](https://github.com/Zerek-Kel/faster-rcnn-windows-test/blob/master/md_image/6.jpg)
 
 # 评估
 
