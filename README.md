@@ -149,24 +149,43 @@ Classification部分利用已经获得的proposal feature maps，通过full conn
 各类样本ap指标和map指标结果如下：
 
 AP for aeroplane = 0.7079
+
 AP for bicycle = 0.7954
+
 AP for bird = 0.7666
+
 AP for boat = 0.6223
+
 AP for bottle = 0.5759
+
 AP for bus = 0.7955
+
 AP for car = 0.8337
+
 AP for cat = 0.8861
+
 AP for chair = 0.4950
+
 AP for cow = 0.8077
+
 AP for diningtable = 0.5676
+
 AP for dog = 0.8592
+
 AP for horse = 0.8394
+
 AP for motorbike = 0.7834
+
 AP for person = 0.7786
+
 AP for pottedplant = 0.4456
+
 AP for sheep = 0.7474
+
 AP for sofa = 0.7460
+
 AP for train = 0.7531
+
 AP for tvmonitor = 0.7402
 
 Mean AP = 0.7273
