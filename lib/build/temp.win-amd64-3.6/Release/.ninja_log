@@ -1,0 +1,7 @@
+# ninja log v5
+27	10368	6765532692493483	D:/faster-rcnn.pytorch-pytorch-1.0/lib/build/temp.win-amd64-3.6/Release/faster-rcnn.pytorch-pytorch-1.0/lib/model/csrc/cpu/nms_cpu.obj	8c5e3360f4fc2ef4
+13	10486	6765532692483509	D:/faster-rcnn.pytorch-pytorch-1.0/lib/build/temp.win-amd64-3.6/Release/faster-rcnn.pytorch-pytorch-1.0/lib/model/csrc/cpu/ROIAlign_cpu.obj	b61154ce1e820df
+1	10647	6765532695245468	D:/faster-rcnn.pytorch-pytorch-1.0/lib/build/temp.win-amd64-3.6/Release/faster-rcnn.pytorch-pytorch-1.0/lib/model/csrc/vision.obj	be657060c81329ea
+19	10764	6765532890560590	D:/faster-rcnn.pytorch-pytorch-1.0/lib/build/temp.win-amd64-3.6/Release/faster-rcnn.pytorch-pytorch-1.0/lib/model/csrc/cpu/nms_cpu.obj	4705eeeaa85877a1
+1	10869	6765532890640383	D:/faster-rcnn.pytorch-pytorch-1.0/lib/build/temp.win-amd64-3.6/Release/faster-rcnn.pytorch-pytorch-1.0/lib/model/csrc/cpu/ROIAlign_cpu.obj	3bf40042cd78afee
+9	11219	6765532895128366	D:/faster-rcnn.pytorch-pytorch-1.0/lib/build/temp.win-amd64-3.6/Release/faster-rcnn.pytorch-pytorch-1.0/lib/model/csrc/vision.obj	750fb62b7a653aa7
