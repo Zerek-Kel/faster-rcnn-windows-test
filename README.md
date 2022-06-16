@@ -38,7 +38,7 @@ torch 和 torchvision 可下载whl文件完成安装（faster-rcnn.pytorch-pytor
 
 VOC2007数据集（faster-rcnn.pytorch-pytorch-1.0\data\VOCdevkit2007）
 
-预训练模型权重文件（D:\faster-rcnn.pytorch-pytorch-1.0\models\res101\pascal_voc\faster_rcnn_1_20_2504.pth）
+[预训练模型权重文件](https://pan.baidu.com/s/12YqdRiue7YyZo8PXuDEI6Q?pwd=uhbs)（faster-rcnn.pytorch-pytorch-1.0\models\res101\pascal_voc\faster_rcnn_1_20_2504.pth）
 
 ## 数据集介绍
 
@@ -138,13 +138,26 @@ Classification部分利用已经获得的proposal feature maps，通过full conn
 
 样例展示：
 
-原图
+<center>
+    <figure>
+        <img src="images\img1.jpg" width="300">
+        <img src="images\img1_det_res101.jpg" width="300">
+        <img src="images\img2.jpg" width="300">
+        <img src="images\img2_det_res101.jpg" width="300">
+        <img src="images\img3.jpg" width="300">
+        <img src="images\img3_det_res101.jpg" width="300">
+    </figure>
+</center>
 
+<<<<<<< HEAD
+
+=======
 ![img1](https://github.com/Zerek-Kel/faster-rcnn-windows-test/blob/master/images/img1.jpg)
 
 结果图：
 
 ![img1_det_res101](https://github.com/Zerek-Kel/faster-rcnn-windows-test/blob/master/images/img1_det_res101.jpg)
+>>>>>>> 36fdf998a4b870e56a12bf8d5ff1f362678bc5ab
 
 各类样本ap指标和map指标结果如下：
 
