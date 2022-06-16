@@ -148,17 +148,6 @@ Classification部分利用已经获得的proposal feature maps，通过full conn
         <img src="images\img3_det_res101.jpg" width="300">
     </figure>
 </center>
-
-<<<<<<< HEAD
-
-=======
-![img1](https://github.com/Zerek-Kel/faster-rcnn-windows-test/blob/master/images/img1.jpg)
-
-结果图：
-
-![img1_det_res101](https://github.com/Zerek-Kel/faster-rcnn-windows-test/blob/master/images/img1_det_res101.jpg)
->>>>>>> 36fdf998a4b870e56a12bf8d5ff1f362678bc5ab
-
 各类样本ap指标和map指标结果如下：
 
 AP for aeroplane = 0.7079
